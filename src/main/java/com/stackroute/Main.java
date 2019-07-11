@@ -20,6 +20,11 @@ public class Main {
         Movie m=(Movie)f.getBean("movie");
         m.displayActorInfo();
 
+        BeanDefinitionRegistry beanfactory=new DefaultListableBeanFactory();
+        XmlBeanDefinitionReader reader=new XmlBeanDefinitionReader(beanfactory);
+        reader.loadBeanDefinitions(new FileSystemResource("/home/nandini/SpringTask/src/main/resources/beans.xml"));
+        Movie o=((DefaultListableBeanFactory)beanfactory).getBean(Movie.class);
+        o.displayActorInfo();
 
     }
 }
