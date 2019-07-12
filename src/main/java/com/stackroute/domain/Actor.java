@@ -5,6 +5,7 @@ public class Actor {
     private String gender;
     private int age;
 
+
     public void setName(String name) {
         this.name = name;
     }
@@ -16,12 +17,20 @@ public class Actor {
     public void setAge(int age) {
         this.age = age;
     }
-    String getName(){
+
+    public String getName() {
         return name;
     }
 
-    public void displayActorInfo1()
-    {
-        System.out.println("Name is : "+name +", Gender is : " +gender+ ", Age is : " +age);
+    public String getGender() {
+        return gender;
+    }
+
+    public int getAge() {
+        return age;
+    }
+@Override
+    public String toString() {
+        return "Name is : " + name + ", Gender is : " + gender + ", Age is : " + age;
     }
 }
