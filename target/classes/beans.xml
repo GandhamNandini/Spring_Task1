@@ -16,11 +16,7 @@
     <bean id="movie" class="com.stackroute.domain.Movie" autowire="byName">
 
     </bean>
-    <bean id="movie5" class="com.stackroute.domain.Movie">
-        <property name="actor" ref="actor1">
-        </property>
 
-    </bean>
 
 
 </beans>
