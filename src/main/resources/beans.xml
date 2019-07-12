@@ -13,7 +13,7 @@
         <property name="gender" value="Male"></property>
         <property name="age" value="40"></property>
     </bean>
-    <bean id="movie4" class="com.stackroute.domain.Movie" autowire="byName">
+    <bean id="movie" class="com.stackroute.domain.Movie" autowire="byName">
 
     </bean>
     <bean id="movie5" class="com.stackroute.domain.Movie">
