@@ -3,18 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="actor" class="com.stackroute.domain.Actor">
-        <property name="name" value="Prabhas"></property>
-        <property name="gender" value="Male"></property>
-        <property name="age" value="40"></property>
-    </bean>
-    <bean id="actor1" class="com.stackroute.domain.Actor">
-        <property name="name" value="Prabhas"></property>
-        <property name="gender" value="Male"></property>
-        <property name="age" value="40"></property>
-    </bean>
-    <bean id="movie" class="com.stackroute.domain.Movie" autowire="byName">
 
+    
+
+    <bean id="lifecycle" class="com.stackroute.domain.BeanLifecycleDemoBean" init-method="initIt" destroy-method="cleanUp">
+        <property name="message" value="i'm property message" />
     </bean>
 
 
