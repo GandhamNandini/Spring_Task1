@@ -19,9 +19,9 @@ public class Actor {
     String getName(){
         return name;
     }
-
-    public void displayActorInfo1()
+    @Override
+    public String toString()
     {
-        System.out.println("Name is : "+name +", Gender is : " +gender+ ", Age is : " +age);
+        return "Name is : "+name +", Gender is : " +gender+ ", Age is : " +age;
     }
 }
